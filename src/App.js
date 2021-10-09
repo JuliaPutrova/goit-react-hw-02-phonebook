@@ -39,7 +39,7 @@ class App extends Component {
     };
 
     //проверка на дублируемый номер телефона
-    this.state.contacts.find(
+    this.state.contacts.some(
       contact =>
         contact.name.toLowerCase() === addNewContact.name.toLowerCase(),
     )
